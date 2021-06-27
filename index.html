@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    * {
+        font-family: cursive;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/back.jpg')
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 34px;
+        left: 20px;
+        background-color: yellow;
+        border-radius: 8px;
+        width: 101px;
+
+    }
+
+    .left img {
+        width: 40px;
+        padding: 0px 30px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .navbar {
+        /* border: 2px solid green; */
+        display: block;
+        width: 41%;
+        margin: 35px auto;
+        padding: 14px 5px;
+        background-color: #fffff75e;
+        border-radius: 12px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    .navbar li a {
+        color: black;
+        padding: 0px 11px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 31px;
+        top: 45px;
+    }
+
+    .btn {
+        background-color: black;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        border-radius: 32px;
+        border: 2px solid #10c8d9;
+    }
+
+    .btn:hover {
+        background-color: gray;
+        color: cornsilk;
+    }
+
+    .container {
+        /* border: 2px solid darkblue; */
+        background-color: #0000004d;
+        width: 33%;
+        margin: 70px 21px;
+        padding: 75px;
+        border-radius: 26px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px 3px;
+        margin: 9px auto;
+        border: 2px solid black;
+        font-size: 18px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 251px;
+        margin: 22px auto;
+        padding: 8px 4px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Lovely Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right bar is for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN NOW</h1>
+        <form action="noaction.php">
+            <label for="text1"></label>
+            <div class="form-group">
+                <input type="text" id="text1" placeholder="Enter your name">
+            </div>
+
+            <label for="text2"></label>
+            <div class="form-group">
+                <input type="text" id="text2" placeholder="Enter your age">
+            </div>
+
+            <label for="text3"></label>
+            <div class="form-group">
+                <input type="text" id="text3" placeholder="Enter your Mobile No.">
+            </div>
+
+            <label for="text4"></label>
+            <div class="form-group">
+                <nput type="text" id="text4" placeholder="Enter your Email">
+            </div>
+
+            <label for="text5"></label>
+            <div class="form-group">
+                <input type="text" id="text5" placeholder="Ener your locality">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
